@@ -5,30 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Js Clock Project</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #282c34;
-            color: white;
-            font-family: 'Arial', Arial, Helvetica, sans-serif;
-        }
+   <style>
+  /* Reset default spacing and ensure full-height */
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
 
-        body::-webkit-scrollbar {
-            display: none;
-        }
+  /* Center content and set global body styles */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #282c34;
+    color: white;
+    font-family: 'Arial', Arial, Helvetica, sans-serif;
+  }
 
-        .clock-container {
-            text-align: center;
-            font-size: 48px;
-            border: 2px solid white;
-            padding: 20px;
-            border-radius: 10px;
-            background-color: rgba(255, 255, 255, 0.1);
-        }
-    </style>
+  /* Hide scrollbars for WebKit browsers */
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Clock container with responsive font-size */
+  .clock-container {
+    text-align: center;
+    /* Adjust the value as needed: 10vmin means 10% of the smaller viewport dimension */
+    font-size: 10vmin;
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+</style>
+
 </head>
 
 <body>
